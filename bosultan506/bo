@@ -1,8 +1,9 @@
 /z99-gaming
-├── index.html         # Main entry point
-├── css/
-│   └── main.css       # Full stylesheet
+├── index.html          # Main HTML file
 ├── js/
-│   └── app.js         # Enhanced functionality
-├── shop.html          # E-commerce section
-└── tournaments.html   # Esports portal
+│   ├── main.js         # Main JavaScript file (create this)
+│   └── components/     # Component files
+│       ├── tactical-map.js
+│       ├── killfeed.js
+│       ├── loadout-builder.js
+│       └── esports-bracket.js
