@@ -1,0 +1,7 @@
+bo/
+├── index.html       (Current homepage)
+├── shop.html        (Store page)
+├── login.html       (User auth)
+├── discord.html     (Community)
+└── css/
+    └── style.css    (Shared styling)
