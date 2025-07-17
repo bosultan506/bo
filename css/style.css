@@ -1,0 +1,49 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #121212;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background: #e63946; /* CoD red */
+    padding: 20px;
+    text-align: center;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.add-to-cart {
+    background: #e63946;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-to-cart:hover {
+    background: #f25464;
+}
+
+/* Login Page */
+.auth-box {
+    width: 300px;
+    margin: 50px auto;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 5px;
+}
