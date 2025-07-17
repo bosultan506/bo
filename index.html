@@ -119,5 +119,128 @@
             }
         }, 100);
     </script>
+</body><!DOCTYPE html>
+<html lang="en" data-theme="dark" data-performance="ultra">
+<head>
+    <!-- AI-Optimized Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+    <meta name="dark-mode" content="enabled">
+    <title>Z99 | Call of Duty Warzone Elite</title>
+    
+    <!-- Quantum CSS Delivery -->
+    <style id="critical-css">
+        /* Atomic CSS */
+        :root{--cod-red:#e63946;--cod-dark:#0d0d0d;--cod-darker:#080808;--cod-light:#1a1a1a;--cod-accent:#457b9d;--cod-gold:#ffd700;--cod-neon:#00f0ff;--ease-out-quint:cubic-bezier(0.22,1,0.36,1)}
+        *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+        body{font-family:system-ui,-apple-system,BlinkMacSystemFont,sans-serif;background:var(--cod-dark);color:#fff;min-height:100vh;overflow-x:hidden}
+        .ai-loader{position:fixed;top:0;left:0;width:100%;height:100%;background:var(--cod-darker);z-index:9999;display:flex;flex-direction:column;justify-content:center;align-items:center}
+        .neon-spinner{width:60px;height:60px;border:3px solid transparent;border-top-color:var(--cod-neon);border-radius:50%;animation:spin 1s linear infinite}
+        @keyframes spin{to{transform:rotate(360deg)}}
+    </style>
+    
+    <!-- Preload Strategic Assets -->
+    <link rel="preload" href="https://fonts.gstatic.com/s/rajdhani/v15/LDIxapCSOBg7S-QT7p4GM-aUWA.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="js/webgl-engine.min.js" as="script">
+    <link rel="preload" href="js/quantum-core.min.js" as="script">
+    
+    <!-- Adaptive Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23e63946%22/><text x=%2250%22 y=%2260%22 font-size=%2250%22 text-anchor=%22middle%22 fill=%22%23fff%22>Z</text></svg>">
+    
+    <!-- Web Monetization -->
+    <meta name="monetization" content="$ilp.uphold.com/your-wallet">
+    
+    <!-- Performance Sentinel -->
+    <script>
+        (function(){
+            // Hardware detection
+            const perfLevel = navigator.hardwareConcurrency > 6 ? 'ultra' : 
+                            navigator.deviceMemory > 4 ? 'high' : 'medium';
+            document.documentElement.setAttribute('data-performance', perfLevel);
+            
+            // Network detection
+            const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+            if(connection?.effectiveType === '4g') {
+                document.documentElement.setAttribute('data-network', 'fast');
+            }
+        })();
+    </script>
+</head>
+<body>
+    <!-- WebGL Warzone Background -->
+    <canvas id="webgl-warzone" aria-hidden="true"></canvas>
+    
+    <!-- AI Loading Sequence -->
+    <div class="ai-loader">
+        <div class="neon-spinner"></div>
+        <div class="loading-progress" data-progress="0">0%</div>
+        <div class="ai-message">Loading Tactical Interface...</div>
+    </div>
+    
+    <!-- Quantum App Shell -->
+    <div id="quantum-app">
+        <!-- SPA<div id="quantum-app">
+    <!-- Warzone Components Go Here -->
+    <warzone-tactical-map></warzone-tactical-map>
+    <killfeed-overlay></killfeed-overlay>
+    <loadout-builder></loadout-builder>
+    <esports-bracket></esports-bracket>
+</div> Content Injected Here -->
+    </div>
+    
+    <!-- Web Components Polyfill -->
+    <script src="js/webcomponents-loader.min.js" defer></script>
+    
+    <!-- Quantum Core (Module) -->
+    <script type="module" src="js/quantum-core.min.js" defer></script>
+    
+    <!-- Fallback Content -->
+    <noscript>
+        <div class="nojs-warning">
+            <h2>Enhanced Combat Mode Required</h2>
+            <p>Enable JavaScript for full Warzone experience</p>
+            <a href="/lite" class="btn">Basic Site</a>
+        </div>
+    </noscript>
+    
+    <!-- AI Hydration Script -->
+    <script>
+        // Progressive Enhancement
+        if('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js', {
+                scope: '/',
+                updateViaCache: 'none'
+            });
+        }
+        
+        // Load WebGL if supported
+        if('WebGL2RenderingContext' in window) {
+            const webglScript = document.createElement('script');
+            webglScript.src = 'js/webgl-engine.min.js';
+            webglScript.defer = true;
+            document.head.appendChild(webglScript);
+        }
+        
+        // Simulate loading (replace with actual)
+        let progress = 0;
+        const progressInterval = setInterval(() => {
+            progress += Math.random() * 15;
+            const progressEl = document.querySelector('.loading-progress');
+            if(progressEl) {
+                progressEl.textContent = `${Math.min(progress, 100).toFixed(0)}%`;
+                progressEl.setAttribute('data-progress', Math.min(progress, 100));
+            }
+            if(progress >= 100) {
+                clearInterval(progressInterval);
+                document.querySelector('.ai-loader').style.opacity = 0;
+                setTimeout(() => {
+                    document.querySelector('.ai-loader').style.display = 'none';
+                    document.dispatchEvent(new Event('quantum-ready'));
+                }, 500);
+            }
+        }, 100);
+    </script>
 </body>
+<!-- Load main JS module -->
+<script type="module" src="js/main.js"></script>
 </html>
